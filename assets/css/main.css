@@ -8,10 +8,25 @@
 }
 html {
   color: #232333;
-  font-family: 'heliotrope_4_italic';
-  font-size: 14pt;
-  line-height: 1.6em;
+  font-family: 'heliotrope4';
+  font-size: 12pt;
+    line-height: 1.6em;
+    text-decoration: none;
 }
+
+.main a {
+  font-family: 'heliotrope4';
+    font-size: 16pt;
+    font-style: italic;
+    text-decoration: none;
+}
+
+nav a {
+  font-family: 'heliotrope4scap';
+  font-size: 12.5pt;
+  text-decoration: none;
+}
+
 body{
   display: block;
   margin: 8px;
@@ -26,9 +41,9 @@ body{
 }
 
 p {
-    font-family: heliotrope_4_regular,'Fira Sans', sans-serif;
+    font-family: heliotrope4,'Fira Sans', sans-serif;
       font-size: 12pt;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 
 hr {
@@ -138,14 +153,18 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 1em; /* Top margin of the header */
-  margin-bottom: 0em; /* Bottom margin of the header */
-  line-height: 2.5em;
+  margin-top: 2rem; /* Top margin of the header */
+  margin-bottom: 0rem; /* Bottom margin of the header */
+  line-height: 1rem;
+    text-decoration: none;
 }
 
 header .main {
-  font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    text-decoration: none;
 }
+
+
 h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
   margin-top: 2em;
