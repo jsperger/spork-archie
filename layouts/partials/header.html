@@ -36,8 +36,11 @@
         <link href="{{ $fontstyle.Permalink }}" rel="stylesheet">
 	{{ end }}
 
-        <!-- Link to the palette.css file -->
+        <!-- Link to the palette.css files -->
     {{ $paletteStyle := resources.Get "css/nord-palette.css" | fingerprint }}
+    <link rel="stylesheet" type="text/css" href="{{ $paletteStyle.Permalink }}">
+
+    {{ $paletteStyle := resources.Get "css/solarized-palette.css" | fingerprint }}
     <link rel="stylesheet" type="text/css" href="{{ $paletteStyle.Permalink }}">
 
 	{{ $style := resources.Get "css/main.css" | fingerprint }}
