@@ -2,15 +2,17 @@
 <html>
 	{{ partial "header.html" . }}
 	<body>
-		<div class="content">
-			{{ partial "head.html" . }}
-
-			<main class="list">
-				<div class="site-description">
+	   {{ partial "head.html" . }}
+			<div class="site-description">
 					{{- if isset .Site.Params "subtitle" -}}
 					<p>{{ .Site.Params.Subtitle | markdownify }}</p>
 					{{- end -}}
-				</div>
+			</div>
+
+            <div class="content">
+
+			<main class="list">
+
                  <p> Ph.D. Biostatistician specializing in adaptive and sequential experimental designs
 for clinical trials, machine learning, and precision medicine. I collaborate
 closely with researchers to provide tailored designs that let them directly
@@ -28,8 +30,8 @@ methodologies.<p>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}
 			</main>
-			{{ partial "footer.html" . }}
 		</div>
 
+			{{ partial "footer.html" . }}
 	</body>
 </html>
