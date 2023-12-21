@@ -1,4 +1,5 @@
 /* fira-sans-regular - latin */
+
 @font-face {
   font-display: swap;
   font-family: 'Fira Sans';
@@ -38,4 +39,39 @@
        url('../fonts/ibm-plex-mono-v6-latin-500italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/ibm-plex-mono-v6-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/ibm-plex-mono-v6-latin-500italic.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
+}
+@font-face {
+font-family: heliotrope_4_regular;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: swap;
+src: url('../fonts/heliotrope/heliotrope_4_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope_4_italic;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+font-display: swap;
+src: url('../fonts/heliotrope/heliotrope_4_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope_6_regular;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: swap;
+src: url('../fonts/heliotrope/heliotrope_6_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope_6_italic;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+font-display: swap;
+src: url('../fonts/heliotrope/heliotrope_6_italic.woff2') format('woff2');
 }
