@@ -4,13 +4,18 @@
 	<body>
 		<div class="content">
 			{{ partial "head.html" . }}
-			
+
 			<main class="list">
 				<div class="site-description">
 					{{- if isset .Site.Params "subtitle" -}}
 					<p>{{ .Site.Params.Subtitle | markdownify }}</p>
 					{{- end -}}
 				</div>
+                 <p> Ph.D. Biostatistician specializing in adaptive and sequential experimental designs
+for clinical trials, machine learning, and precision medicine. I collaborate
+closely with researchers to provide tailored designs that let them directly
+address their unique scientific inquiries without the constraints of traditional
+methodologies.<p>
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
@@ -25,6 +30,6 @@
 			</main>
 			{{ partial "footer.html" . }}
 		</div>
-		
+
 	</body>
 </html>
