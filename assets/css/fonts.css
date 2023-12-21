@@ -40,6 +40,45 @@
        url('../fonts/ibm-plex-mono-v6-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/ibm-plex-mono-v6-latin-500italic.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
 }
+
+
+
+@font-face {
+font-family: heliotrope3;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_3_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope3;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_3_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope3;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_3_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope3;
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_3_bold_italic.woff2') format('woff2');
+}
+
 @font-face {
 font-family: heliotrope4;
 font-style: normal;
@@ -57,6 +96,98 @@ font-stretch: normal;
 font-display: auto;
 src: url('../fonts/heliotrope/heliotrope_4_italic.woff2') format('woff2');
 }
+
+@font-face {
+font-family: heliotrope4;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_4_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope4;
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_4_bold_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope6;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: swap;
+src: url('../fonts/heliotrope/heliotrope_6_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope6;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+font-display: swap;
+src: url('../fonts/heliotrope/heliotrope_6_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope6;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_6_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope6;
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_6_bold_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope8;
+font-style: normal;
+font-weight: normal;
+font-stretch: normal;
+font-display: swap;
+src: url('../fonts/heliotrope/heliotrope_8_regular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope8;
+font-style: italic;
+font-weight: normal;
+font-stretch: normal;
+font-display: swap;
+src: url('../fonts/heliotrope/heliotrope_8_italic.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope8;
+font-style: normal;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_8_bold.woff2') format('woff2');
+}
+
+@font-face {
+font-family: heliotrope8;
+font-style: italic;
+font-weight: bold;
+font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_8_bold_italic.woff2') format('woff2');
+}
+
+
 
 /* hack for small caps, don't want auto-generated otf small caps*/
 @font-face {
@@ -91,21 +222,37 @@ src: url('../fonts/heliotrope/heliotrope_6_caps_regular.woff2') format('woff2');
 font-display: auto;
 src: url('../fonts/heliotrope/heliotrope_8_caps_regular.woff2') format('woff2');
 }
-
 @font-face {
-font-family: heliotrope6;
-font-style: normal;
-font-weight: normal;
-font-stretch: normal;
-font-display: swap;
-src: url('../fonts/heliotrope/heliotrope_6_regular.woff2') format('woff2');
+    font-family: heliotrope3scap;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_3_caps_bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: heliotrope4scap;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_4_caps_bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: heliotrope6scap;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_6_caps_bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: heliotrope8scap;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+font-display: auto;
+src: url('../fonts/heliotrope/heliotrope_8_caps_bold.woff2') format('woff2');
 }
 
-@font-face {
-font-family: heliotrope6;
-font-style: italic;
-font-weight: normal;
-font-stretch: normal;
-font-display: swap;
-src: url('../fonts/heliotrope/heliotrope_6_italic.woff2') format('woff2');
-}
+
