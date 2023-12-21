@@ -1,54 +1,89 @@
 /* Markdown */
 :root{
---maincolor: red;
---bordercl:rebeccapurple;
---callouctcolor:dodgerblue;
---hovercolor:navy;
---darkMaincolor: #50fa7b;
+    --maincolor: red;
+    --bordercl:rebeccapurple;
+    --callouctcolor:dodgerblue;
+    --hovercolor:navy;
+    --darkMaincolor: #50fa7b;
+
+    --heliotrope-text-font: heliotrope3;
+    --heliotrope-text-line-height: 1.42;
+    --heliotrope-text-size: 0.96rem;
+
+    --heliotrope-header-font: heliotrope4;
+    --heliotrope-header-line-height: 1.6;
+    --heliotrope-header-size: 1.15rem;
 }
-html {
-  color: #232333;
-  font-family: 'heliotrope4';
-  font-size: 12pt;
-    line-height: 1.6em;
-    text-decoration: none;
+
+html { font-size: 2.4vw; }
+
+@media all and (min-width:1000px) { html { font-size: 24px; } }
+@media all and (max-width:520px) { html{ font-size: 18px; } }
+
+.body-text_heliotrope {
+    /* Styling from  https://practicaltypography.com/ */
+    font-family: var(--heliotrope-text-font);
+    line-height: var(--heliotrope-text-line-height);
+    font-size: var(--heliotrope-text-size);
+}
+
+.body-text_heliotrope {
+    font-family: heliotrope3;
+    line-height: 1.42;
+    font-size: 0.96rem;
+}
+
+.body-text_heliotrope .small-caps,
+.body-text_heliotrope sig,
+.body-text_heliotrope .subhead,
+.body-text_heliotrope .howto-name,
+.body-text_heliotrope a.xref {
+    font-family: heliotrope4scap;
 }
 
 .main a {
-  font-family: 'heliotrope4';
-    font-size: 16pt;
+  /* font-family: 'heliotrope6'; */
+    /*   font-size: 20pt; */
+  font-family: 'heliotrope6';
+    font-size: 1.5rem;
     font-style: italic;
     text-decoration: none;
 }
 
 nav a {
   font-family: 'heliotrope4scap';
-  font-size: 12.5pt;
-  text-decoration: none;
+  font-size: 1rem;
+    text-decoration: none;
+    padding-right: .25em;
 }
 
 body{
-  display: block;
-  margin: 8px;
+ margin-left:auto;
+    margin-right:auto;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100%;
+    position: relative; z-index: -10000; -webkit-font-smoothing: subpixel-antialiased; /* corrects safari rendering */
+color: var(--solarized-base02);
+  background-color: var(--solarized-base2);
 }
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 ::selection {
-  background: var(--maincolor);
-  color: #fff;
+  background: var(--solarized-base0);
+  color: var(--solarized-base2);
+  text-shadow: none;
 }
-
 p {
-    font-family: heliotrope4,'Fira Sans', sans-serif;
-      font-size: 12pt;
-  line-height: 1.3;
+    font-family: var(--heliotrope-text-font), 'Fira Sans', sans-serif;
+    line-height: var(--heliotrope-text-line-height);
+    font-size: var(--heliotrope-text-size);
 }
 
 hr {
   border: 0;
-  border-top: 3px dotted var(--bordercl);
+  border-top: 3px dotted var(--solarized-cyan);
   margin: 1em 0;
 }
 
@@ -64,9 +99,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 a:hover {
-    background-color: var(--hovercolor);
-    color: #fff;
+      color: var(--solarized-base2);
+  background-color: var(--solarized-base01);
 }
 
 ul {
@@ -155,7 +191,7 @@ header {
   justify-content: space-between;
   margin-top: 2rem; /* Top margin of the header */
   margin-bottom: 0rem; /* Bottom margin of the header */
-  line-height: 1rem;
+  line-height: 1.1rem;
     text-decoration: none;
 }
 
@@ -164,18 +200,52 @@ header .main {
     text-decoration: none;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 1.2rem;
-  margin-top: 2em;
+h1 {
+    font-family: var(--heliotrope-header-font);
+    font-size: var(--heliotrope-header-size);
+    line-height: var(--heliotrope-header-line-height);
+    margin-top: 1em;
 }
 
-h1::before { color: var(--maincolor); content: '# '; }
-h2::before { color: var(--maincolor); content: '## '; }
-h3::before { color: var(--maincolor); content: '### '; }
-h4::before { color: var(--maincolor); content: '#### '; }
-h5::before { color: var(--maincolor); content: '##### '; }
-h6::before { color: var(--maincolor); content: '###### '; }
+h2 {
+  font-size: 1.05rem;
+  margin-top: 1.2em;
+}
+
+h3, h4, h5, h6 {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* h1::before { color: var(--solarized-yellow); content: '# '; } */
+/* h2::before { color: var(--solarized-yellow); content: '## '; } */
+/* h3::before { color: var(--solarized-yellow); content: '### '; } */
+/* h4::before { color: var(--solarized-yellow); content: '#### '; } */
+/* h5::before { color: var(--solarized-yellow); content: '##### '; } */
+/* h6::before { color: var(--solarized-yellow); content: '###### '; } */
+
+h1 a:after{
+    position: relative;
+    content: "\FEFF°";
+    margin-left: 0.10em;
+    font-size: 90%;
+    top: -0.10em;
+    color: var(--solarized-red);
+    font-feature-settings: "caps";
+    font-variant-numeric: normal;
+}
+
+p a:after{
+    position: relative;
+    content: "\FEFF°";
+    margin-left: 0.10em;
+    font-size: 90%;
+    top: -0.10em;
+    color: var(--solarized-red);
+    font-feature-settings: "caps";
+    font-variant-numeric: normal;
+}
+
 
 .meta {
   color: #999;
@@ -186,9 +256,9 @@ h6::before { color: var(--maincolor); content: '###### '; }
 footer {
   display: flex;
   align-items: center;
-  border-top: 0.4rem dotted var(--bordercl);
-  padding: 2rem 0rem;
-  margin-top: 2rem;
+  border-top: 0.2rem dotted var(--solarized-yellow);
+  padding: .1rem 0rem;
+  margin-top: 3rem;
 }
 .soc {
   display: flex;
@@ -204,19 +274,41 @@ footer {
   padding: var(--footer-padding);
 }
 
+.title {
+    font-family: var(--heliotrope-header-font);
+    font-size: var(--heliotrope-header-size);
+    line-height: var((--heliotrope-header-line-height));
+    margin-bottom: 0;
+}
+
 /* Common */
 .title h1 {
-  margin-bottom: 0;
+  font-family: var(--heliotrope-header-font);
+    font-size: var(--heliotrope-header-size);
+    line-height: var((--heliotrope-header-line-height));
+    margin-bottom: 0;
 }
 
 time {
-  color: grey;
+   font-family: var(--heliotrope-text-font);
+   line-height: var(--heliotrope-text-line-height);
+   font-size: var(--heliotrope-text-size);
+   color: grey;
 }
 
 /* Posts */
 article .title {
-  margin-bottom: 1em;
+    font-family: var(--heliotrope-text-font);
+    line-height: var(--heliotrope-text-line-height);
+    font-size: var(--heliotrope-text-size);
 }
+
+.list-item {
+    font-family: var(--heliotrope-text-font);
+    line-height: var(--heliotrope-text-line-height);
+    font-size: var(--heliotrope-text-size);
+}
+
 
 
 /* Callout */
@@ -251,8 +343,8 @@ justify-content: space-between;
   border-bottom: 3px solid var(--maincolor);
 }
 .tags a:hover{
-  color:white;
-  background-color: var(--hovercolor);
+  color: var(--solarized-base03);
+  background-color: var(--solarized-base3);
 }
 svg{
   max-height: 15px;
@@ -261,12 +353,16 @@ svg{
   color: white;
 }
 .draft-label{
-    color: var(--bordercl);
-    text-decoration: none;
+    font-family: heliotrope4scap;
+    line-height: var(--heliotrope-text-line-height);
+    font-size: var(--heliotrope-text-size);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--solarized-orange);
     padding: 2px 4px;
     border-radius: 4px;
     margin-left: 6px;
-    background-color: #f9f2f4;
+    background-color: var(--solarized-base-032);
 }
 .highlight {
   position: relative;
