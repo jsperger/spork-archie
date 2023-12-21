@@ -62,9 +62,22 @@ h6::before {
 }
 
 a {
-/*  border-bottom: 3px solid var(--nord4); */
+  /* border-bottom: 1px dotted var(--nord11); */
   color: inherit;
 }
+
+
+p a:after{
+    position: relative;
+    content: "\FEFF°";
+    margin-left: 0.10em;
+    font-size: 90%;
+    top: -0.10em;
+    color: var(--nord11);
+    font-feature-settings: "caps";
+    font-variant-numeric: normal;
+}
+
 a:hover {
   background-color: var(--nord3);
   color: var(--nord5);
