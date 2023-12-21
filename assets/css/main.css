@@ -256,9 +256,13 @@ p a:after{
 footer {
   display: flex;
   align-items: center;
-  border-top: 0.2rem dotted var(--solarized-yellow);
+  border-top: none;
+  border-top: 0.08rem solid var(--solarized-yellow);
   padding: .1rem 0rem;
   margin-top: 3rem;
+  font-family: (--heliotrope-text-font);
+  font-size: .8rem;display: flex;
+  align-items: center;
 }
 .soc {
   display: flex;
@@ -293,7 +297,7 @@ time {
    font-family: var(--heliotrope-text-font);
    line-height: var(--heliotrope-text-line-height);
    font-size: var(--heliotrope-text-size);
-   color: grey;
+   color:  var(--solarized-base00);
 }
 
 /* Posts */

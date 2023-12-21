@@ -34,32 +34,32 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ddd;
-}
-h1::before {
   color: var(--nord4);
-  content: "# ";
 }
-h2::before {
-  color: var(--nord4);
-  content: "## ";
-}
-h3::before {
-  color: var(--nord4);
-  content: "### ";
-}
-h4::before {
-  color: var(--nord4);
-  content: "#### ";
-}
-h5::before {
-  color: var(--nord4);
-  content: "##### ";
-}
-h6::before {
-  color: var(--nord4);
-  content: "###### ";
-}
+/* h1::before { */
+/*   color: var(--nord4); */
+/*   content: "# "; */
+/* } */
+/* h2::before { */
+/*   color: var(--nord4); */
+/*   content: "## "; */
+/* } */
+/* h3::before { */
+/*   color: var(--nord4); */
+/*   content: "### "; */
+/* } */
+/* h4::before { */
+/*   color: var(--nord4); */
+/*   content: "#### "; */
+/* } */
+/* h5::before { */
+/*   color: var(--nord4); */
+/*   content: "##### "; */
+/* } */
+/* h6::before { */
+/*   color: var(--nord4); */
+/*   content: "###### "; */
+/* } */
 
 a {
   /* border-bottom: 1px dotted var(--nord11); */
@@ -115,8 +115,8 @@ a:hover {
   color: black;
 }
 .draft-label {
-  color: var(--nord4);
-  background-color: blue;
+  color: var(--nord12);
+  background-color: var(--nord0);
 }
 .highlight pre code[class=language-javaScript]::before,
 .highlight pre code[class="language-js"]::before {
@@ -166,9 +166,5 @@ a:hover {
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  border-top: none;
-  padding: 2rem 0rem;
-  margin-top: 2rem;
+    border-top: 0.08rem solid var(--nord9);
 }
