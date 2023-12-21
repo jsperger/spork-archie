@@ -60,7 +60,7 @@ blockquote {
 }
 
 a {
-  border-bottom: 3px solid var(--maincolor);
+  /* border-bottom: 3px solid var(--maincolor); */
   color: inherit;
   text-decoration: none;
 }
