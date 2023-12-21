@@ -1,22 +1,16 @@
 body {
-  color: white;
-  background-color: #202124;
-}
-
-::-moz-selection {
-  background: blue;
-  color: #fff;
-  text-shadow: none;
+  color: var(--nord4);
+  background-color: var(--nord0);
 }
 
 ::selection {
-  background: red;
-  color: #fff;
+  background: var(--nord3);
+  color: var(--nord6);
   text-shadow: none;
 }
 
 hr {
-  border-top: 3px dotted blue;
+  border-top: 3px dotted var(--nord11);
 }
 code {
   background-color: lightblue;
@@ -43,62 +37,62 @@ h6 {
   color: #ddd;
 }
 h1::before {
-  color: var(--darkMaincolor);
+  color: var(--nord4);
   content: "# ";
 }
 h2::before {
-  color: var(--darkMaincolor);
+  color: var(--nord4);
   content: "## ";
 }
 h3::before {
-  color: var(--darkMaincolor);
+  color: var(--nord4);
   content: "### ";
 }
 h4::before {
-  color: var(--darkMaincolor);
+  color: var(--nord4);
   content: "#### ";
 }
 h5::before {
-  color: var(--darkMaincolor);
+  color: var(--nord4);
   content: "##### ";
 }
 h6::before {
-  color: var(--darkMaincolor);
+  color: var(--nord4);
   content: "###### ";
 }
 
 a {
-  border-bottom: 3px solid var(--darkMaincolor);
+  border-bottom: 3px solid var(--nord4);
   color: inherit;
 }
 a:hover {
-  background-color: var(--darkMaincolor);
-  color: black;
+  background-color: var(--nord3);
+  color: var(--nord5);
 }
 
 .site-description a {
-  color: #ddd;
+  color: var(--nord5);
 }
 .site-description a:hover {
-  color: black;
+  color: var(--nord0);
 }
 
 .tags a {
-  border-bottom: 3px solid var(--darkMaincolor);
+  border-bottom: 3px solid var(--nord4);
 }
 .tags a:hover {
-  background-color: var(--darkMaincolor);
+  background-color: var(--nord4);
   color: black;
 }
 
 .site-title a {
-  color: white;
+  color: var(--nord4);
   text-decoration: none !important;
 }
 
 .header nav,
 .footer {
-  border-color: #333;
+  border-color: var(--nord11);
 }
 
 .highlight {
@@ -108,7 +102,7 @@ a:hover {
   color: black;
 }
 .draft-label {
-  color: var(--darkMaincolor);
+  color: var(--nord4);
   background-color: blue;
 }
 .highlight pre code[class=language-javaScript]::before,
@@ -133,7 +127,7 @@ a:hover {
 .highlight pre code[class*='language-json']::before{
   content: 'json';
   background: dodgerblue;
-   color: #000000 
+   color: #000000
 }
 .highlight pre code[class*='language-python']::before,
 .highlight pre code[class*='language-py']::before {
@@ -156,4 +150,12 @@ a:hover {
   content: 'Markdown';
   background: royalblue;
   color: whitesmoke ;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  border-top: none;
+  padding: 2rem 0rem;
+  margin-top: 2rem;
 }

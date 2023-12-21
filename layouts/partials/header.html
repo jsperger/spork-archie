@@ -36,6 +36,10 @@
         <link href="{{ $fontstyle.Permalink }}" rel="stylesheet">
 	{{ end }}
 
+        <!-- Link to the palette.css file -->
+    {{ $paletteStyle := resources.Get "css/nord-palette.css" | fingerprint }}
+    <link rel="stylesheet" type="text/css" href="{{ $paletteStyle.Permalink }}">
+
 	{{ $style := resources.Get "css/main.css" | fingerprint }}
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ $style.Permalink }}" />
 
@@ -49,7 +53,7 @@
 		<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 		</script>
-	
+
 		<!-- inline Mathjax -->
 		<script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
@@ -71,7 +75,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
 		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
 		<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
-		
+
 		<!-- inline KaTeX -->
 		<script>
 			document.addEventListener("DOMContentLoaded", function() {
@@ -84,7 +88,7 @@
 			});
 			</script>
 	{{ end }}
-	
+
 	<!-- Custom CSS style get applied last -->
 	{{- if isset .Site.Params "customcss" }}
 		{{ range .Site.Params.customCSS }}
